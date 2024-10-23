@@ -44,4 +44,16 @@ router.get('/:listingId', async (req, res) => {
     res.redirect('/');
   }
 });
+
+// delete button to delete the house
+router.delete('/:listingId', async (req, res) => {
+  try {
+    console.log('listingId: ', req.params.listingId);
+    console.log('user: ', req.session.user);
+    res.send(`A DELETE request was issued for ${req.params.listingId}`);
+  } catch (error) {
+    console.log(error);
+    res.redirect('/');
+  }
+});
 module.exports = router;
