@@ -20,9 +20,10 @@
             name="streetAddress"
             id="street"
             value="<%= listing.streetAddress %>"
+            class="input"
           />
           <label for="city">City:</label>
-          <input type="text" name="city" id="city" value="<%= listing.city %>" />
+          <input type="text" name="city" id="city" value="<%= listing.city %>"  class="input"/>
           <label for="price">Price:</label>
           <input
             type="number"
@@ -30,6 +31,7 @@
             id="price"
             value="<%= listing.price %>"
             min="0"
+            class="input"
           />
           <label for="size">Size:</label>
           <input
@@ -38,6 +40,7 @@
             id="size"
             value="<%= listing.size %>"
             min="0"
+            class="input"
           />
           <button type="submit">Edit Listing</button>
         </form>
